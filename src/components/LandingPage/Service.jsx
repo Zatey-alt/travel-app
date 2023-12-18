@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/image.png'
+import image from '../assets/Image.png'
 import CustomButton from './CustomButton'
 
 const Service = () => {
