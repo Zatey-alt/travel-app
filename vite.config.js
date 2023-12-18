@@ -1,5 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import axios from 'axios'; 
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,9 +9,14 @@ export default defineConfig({
     rollupOptions: {
       external: [
         '@fortawesome/react-fontawesome',
-        'axios',
         '@fortawesome/free-brands-svg-icons',
       ],
+      output: {
+       
+        globals: {
+          axios: 'axios',
+        },
+      },
     },
   },
-})
+});
