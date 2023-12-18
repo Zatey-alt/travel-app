@@ -6,7 +6,11 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@fortawesome/react-fontawesome','axios','@fortawesome/free-brands-svg-icons'],
+      external: [
+        '@fortawesome/react-fontawesome',
+        'axios',
+        '@fortawesome/free-brands-svg-icons',
+      ],
     },
   },
 })
