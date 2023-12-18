@@ -27,7 +27,7 @@ const PopularDestinations = () => {
             lang: 'en_US',
           },
           headers: {
-            'X-RapidAPI-Key': '28996fc193msh23df93494ab0231p15e04bjsnf40357310c58',
+            'X-RapidAPI-Key': '21db6e7eab3msh16fa81911eb662cp18f58ejsnd9d5674d1e88',
             'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com',
           },
         };
