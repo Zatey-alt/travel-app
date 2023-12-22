@@ -76,7 +76,7 @@ const PopularDestinations = () => {
 
           <ul className="photo-list">
             {currentPhotos.map((photo) => (
-              <li key1={photo.photo_id}>
+              <li key={photo.photo_id}>
                 <img src={photo.images.large.url} alt={photo.caption} className="photo-item" />
               </li>
             ))}
