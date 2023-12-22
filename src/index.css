@@ -684,25 +684,31 @@
     max-width: 800px;
     margin: 8em auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
-  h1 {
+  .result-container  h1 {
     font-size: 24px;
     margin-bottom: 20px;
   }
   
-  .search-bar {
+  .result-container   .search-bar {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+    text-align: left;
   }
   
-  .search-bar input {
+   .search-bar input {
     padding: 10px;
+    width: 700px;
     flex: 1;
   }
   
-  .search-bar button {
+  .result-container   .search-bar button {
     width: 150px;
     background-color: #1a1a1a;
     color: #fff;
@@ -710,25 +716,23 @@
     cursor: pointer;
     border-radius: 5px;
   }
-  .search-bar button:hover{
+  .result-container  .search-bar button:hover{
     background-color: #555;
   }
   
-  .search-results {
-    margin-bottom: 20px;
-  }
+ 
   
-  .search-results h2 {
+  .result-container  .search-results h2 {
     font-size: 18px;
     margin-bottom: 10px;
   }
   
-  .search-results ul {
+  .result-container  .search-results ul {
     list-style: none;
     padding: 0;
   }
   
-  .search-results li {
+  .result-container   .search-results li {
     cursor: pointer;
     padding: 10px;
     margin-bottom: 5px;
@@ -738,14 +742,10 @@
  .search-results li:hover{
     background-color: #ddd;
  }
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  
   
   /* Add styling for lists */
-  .list-container h2 {
+  .result-container  .list-container h2 {
     flex: 1;
     border: 2px solid #1e1e1e;
     border-radius: 5px;
@@ -776,7 +776,12 @@
 
 /* SearchResultList Styles */
 .search-results {
+  
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -786,6 +791,7 @@
 }
 
 .search-results ul {
+ 
   list-style: none;
   padding: 0;
 }
@@ -835,7 +841,36 @@
   font-size: 18px;
   font-weight: bold;
   
-  
+  @media screen and (max-width: 767px) {
+  .search-results li {
+    width: 600px; 
+    flex-direction: column; 
+    height: auto;
+
+  }
+  .search-results ul {
+    margin-top: 10em;
+  }
+ 
+  .search-results{
+    z-index: 999;
+    display: flex;
+
+  }
+
+  .search-results img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .Location-name {
+    margin-bottom: 10px; 
+  }
+
+  .details-container p {
+    font-size: 16px; 
+  }
+}
 
 
 }
@@ -920,6 +955,17 @@ select {
   #temp{
     font-weight: bolder;
     font-size: 28px;
+  }
+  @media screen and (max-width: 767px) {
+    .forecast-container ul {
+      flex-direction: row;
+      overflow-x: scroll; 
+    }
+  
+    .forecast-container ul li {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
   }
 
   .book-now-button {

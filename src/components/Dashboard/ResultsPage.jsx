@@ -28,14 +28,14 @@ const ResultPage = () => {
   const fetchForecastData = async (latitude, longitude) => {
     const forecastOptions = {
       method: 'GET',
-      url: 'https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly',
+      url: 'https://ai-weather-by-meteosource.p.rapidapi.com/daily',
       params: {
         lat: latitude,
         lon: longitude,
       },
       headers: {
-        'X-RapidAPI-Key': '28996fc193msh23df93494ab0231p15e04bjsnf40357310c58',
-        'X-RapidAPI-Host': 'weatherbit-v1-mashape.p.rapidapi.com',
+        'X-RapidAPI-Key': '7fcb211cefmsh961fb510a828124p12a6c8jsneaafb47a27cf',
+        'X-RapidAPI-Host': 'ai-weather-by-meteosource.p.rapidapi.com'
       },
     };
 
@@ -253,9 +253,9 @@ const ResultPage = () => {
         {showNotFound ? (
           <NotFoundPage />
         ) : (
-          <>
+         
             <SearchResultList searchResults={searchResults} />
-          </>
+       
         )}
       </div>
     </div>
