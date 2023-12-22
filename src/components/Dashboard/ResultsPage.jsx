@@ -28,17 +28,15 @@ const ResultPage = () => {
   const fetchForecastData = async (latitude, longitude) => {
     const forecastOptions = {
       method: 'GET',
-      url: 'https://weather338.p.rapidapi.com/weather/forecast',
+      url: 'https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly',
       params: {
         lat: latitude,
         lon: longitude,
-        language: 'en-US',
-       units: 'm'
       },
       headers: {
-        'X-RapidAPI-Key': '1db6e7eab3msh16fa81911eb662cp18f58ejsnd9d5674d1e88',
-        'X-RapidAPI-Host': 'weather338.p.rapidapi.com'
-      }
+        'X-RapidAPI-Key': '7fcb211cefmsh961fb510a828124p12a6c8jsneaafb47a27cf',
+        'X-RapidAPI-Host': 'weatherbit-v1-mashape.p.rapidapi.com',
+      },
     };
 
     try {
@@ -70,7 +68,7 @@ const ResultPage = () => {
           },
           headers: {
             'X-RapidAPI-Key':
-              '1db6e7eab3msh16fa81911eb662cp18f58ejsnd9d5674d1e88',
+              '7fcb211cefmsh961fb510a828124p12a6c8jsneaafb47a27cf',
             'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com',
           },
         }
@@ -153,7 +151,7 @@ const ResultPage = () => {
           lang: 'en_US',
         },
         headers: {
-          'X-RapidAPI-Key': '1db6e7eab3msh16fa81911eb662cp18f58ejsnd9d5674d1e88',
+          'X-RapidAPI-Key': '7fcb211cefmsh961fb510a828124p12a6c8jsneaafb47a27cf',
           'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com',
         },
       });
