@@ -64,9 +64,7 @@ function Login() {
             required
           />
         </label>
-        <br />
         
-        <br />
         <button className='form-button' type="submit" disabled={loading}>
           {loading ? <LoadingSpinner /> : 'Login'}
         </button>
@@ -79,8 +77,8 @@ function Login() {
         <Link to="/landing-page">Home</Link>
       </p>
     </div>
-    </div>
-     </div>
+  </div>
+</div>
 
   );
 }
