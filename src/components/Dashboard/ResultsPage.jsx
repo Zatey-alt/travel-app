@@ -28,15 +28,17 @@ const ResultPage = () => {
   const fetchForecastData = async (latitude, longitude) => {
     const forecastOptions = {
       method: 'GET',
-      url: 'https://ai-weather-by-meteosource.p.rapidapi.com/daily',
+      url: 'https://weather338.p.rapidapi.com/weather/forecast',
       params: {
         lat: latitude,
         lon: longitude,
+        language: 'en-US',
+       units: 'm'
       },
       headers: {
-        'X-RapidAPI-Key': '7fcb211cefmsh961fb510a828124p12a6c8jsneaafb47a27cf',
-        'X-RapidAPI-Host': 'ai-weather-by-meteosource.p.rapidapi.com'
-      },
+        'X-RapidAPI-Key': '1db6e7eab3msh16fa81911eb662cp18f58ejsnd9d5674d1e88',
+        'X-RapidAPI-Host': 'weather338.p.rapidapi.com'
+      }
     };
 
     try {
@@ -253,9 +255,9 @@ const ResultPage = () => {
         {showNotFound ? (
           <NotFoundPage />
         ) : (
-         
+          <>
             <SearchResultList searchResults={searchResults} />
-       
+          </>
         )}
       </div>
     </div>

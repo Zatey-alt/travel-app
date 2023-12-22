@@ -17,7 +17,6 @@ const LandingPage = () => {
         <div className="popular-destinations"><PopularDestinations /></div>
         <div className="offers"><Offers/></div>
         <div className="service"><Service/></div>
-        <div className="newsletter"><Newsletter/></div>
         <div className="Footer"><Footer/></div>
       
     </div>

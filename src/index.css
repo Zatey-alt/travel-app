@@ -850,6 +850,9 @@
   }
   .search-results ul {
     margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
  
   .search-results{
