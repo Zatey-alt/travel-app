@@ -26,7 +26,7 @@
     color: #181818;
     font-size: 25px;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 10px;
   }
   nav ul{
     margin-right: 20px;
@@ -63,7 +63,7 @@
   @media (max-width: 944px){
     label.logo{
       font-size: 20px;
-      margin-right: 20px;
+      margin-right: 5px;
       
     }
     nav ul li a{
@@ -244,19 +244,38 @@
     text-align: center;
   }
   .server h2 {
-    font-size: 1em;
+    padding: 25px;
+    font-size: 1.6em;
     margin-bottom: 8px;
+    
   }
 
   .server p {
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin-bottom: 15px;
+    padding: 25px;
+    text-align: justify;
+  }
+  .newsletter input {
+    max-width: 400px ;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    
+   
   }
 }
 
  .newsletter {
     margin-top: 20px;
     text-align: center;
+    
+   
   }
   
   .newsletter p {
@@ -276,6 +295,7 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    margin-top: 20px;
   }
   .Footer{
     bottom: 0;
@@ -652,7 +672,7 @@
   
 
   .photo-item {
-    width: 100vw; 
+    width: 100%; 
     margin: 10px 0; 
   }
 }

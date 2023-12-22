@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className="navigation fixed-top"> 
       <nav>
-      <label className="logo"><img src={Logo}  height = {180}   alt="" srcset="" /></label>
+      <label className="logo"><img src={Logo}  height = {150}   alt="" srcset="" /></label>
         <input type="checkbox" id="check" />
         <label htmlFor="check" className="checkbtn">
           <i className="fas fa-bars"></i>
